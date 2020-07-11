@@ -27,7 +27,6 @@ jobs:
     - name: Publish github pages
       run: |
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/jayasai470/jayasai470.github.io.git
-        git config --global user.email "jayasai470@gmail.com"
         git config --global user.name "Jay Muppalla"
         yarn deploy
       env:
