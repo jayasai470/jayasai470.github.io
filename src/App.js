@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import{ Framer } from './components/framer'
+import{ Framer } from './components/Framer'
 
 function App() {
   return (
