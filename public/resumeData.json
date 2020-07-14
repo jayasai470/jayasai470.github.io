@@ -11,8 +11,8 @@
       "city":"Dallas",
       "state":"Texas"
     },
-    "website": "https://j.web.umkc.edu/jmmvd",
-    "resumedownload":"https://j.web.umkc.edu/jmmvd",
+    "website": "https://jayasai470.github.io",
+    "resumedownload":"jay.pdf",
     "social":[
       {
         "name":"linkedin",
@@ -102,12 +102,14 @@
       {
         "title":"Resume Site",
         "category":"Resume from code",
-        "url":"/resume.html"
+        "url":"/resume.html",
+        "image": "./portfolio-resume.png"
       },
       {
         "title":"Old Portfolio",
         "category":"Legacy portfolio site",
-        "url":"https://j.web.umkc.edu/jmmvd"
+        "url":"https://j.web.umkc.edu/jmmvd",
+        "image": "./portfolio-old.png"
       }
     ]
   }
