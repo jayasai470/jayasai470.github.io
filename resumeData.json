@@ -1,0 +1,114 @@
+{
+  "main": {
+    "name":"Jaya Sai Krishna Muppalla",
+    "occupation":"Software Engineer",
+    "description":"Currently working as Backend developer in Samsung",
+    "bio":"A programming enthusiast, who is always eager to learn new technologies and develop something fun. My other interests include playing Cricket, Basketball, VolleyBall .. any games .... 😀",
+    "contactmessage":"Have a project for me? Think I'd be a good fit for your team? I'd love to hear from you, give me a shout by email or by using the form below if you'd like to get in contact with me.",
+    "email": "jayasai470@gmail.com",
+    "phone": "618-946-5202",
+    "address":{
+      "city":"Dallas",
+      "state":"Texas"
+    },
+    "website": "https://j.web.umkc.edu/jmmvd",
+    "resumedownload":"https://j.web.umkc.edu/jmmvd",
+    "social":[
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/jaya-sai-krishna-muppalla-0b99951a0/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"http://github.com/jayasai470",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"Experience in designing, developing, deploying and maintaining highly available, scalable rest api's which are battle tested and performance optimized using java, nodejs and aws",
+    "education":[
+      {
+        "school":"University of Missouri Kansas City (UMKC)",
+        "degree":"Masters in Computer Science",
+        "graduated":"May 2015"
+      },
+      {
+        "school":"Jawaharlal Nehru Technological University",
+        "degree":"Bachelor's in Electronics and Communication Engineering",
+        "graduated":"April 2013"
+      }
+    ],
+    "work":[
+      {
+        "company":"Samsung Electronics America",
+        "title":"Engineer 2, Software Process engineering",
+        "years":"July 2019 - Present",
+        "description": "Created microservices with FAAS approach using springboot, event driven architecture, AWS and Infrastructure As A Service using Serverless, Cloudformation, Terraform. Used apache flink for real time stream processing with detections using CEP(complex event processing)"
+      },
+      {
+        "company":"Samsung Electronics America (Contractor)",
+        "title":"Server Engineer",
+        "years":"Aug 2015 - July 2019",
+        "description":"Working on springboot and spring cloud with netflix OSS stack which includes Zuul, Hystrix, Consul, keycloak in a micro service architecture.Dockerizing the app, deploying and maintaining containers in production using Container orchestrations like ECS, EKS (Kubernetes service in AWS)"
+      }
+    ],
+    "skills":[
+      {
+        "name":"Java, NodeJS, Express, Meteor",
+        "level":"80%"
+      },
+      {
+        "name":"AWS",
+        "level":"90%"
+      },
+      {
+        "name": "GoLang",
+        "level": "50%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"50%"
+      },
+      {
+        "name":"Serverless",
+        "level":"95%"
+      },
+      {
+        "name":"Docker",
+        "level":"80%"
+      },
+      {
+        "name":"Kubernetes, Istio, Helm, Traefik",
+        "level":"70%"
+      },
+      {
+        "name": "Devops",
+        "level": "70%"
+      },
+      {
+        "name": "Mongodb,Dynamodb",
+        "level": "90%"
+      },
+      {
+        "name": "Mysql",
+        "level": "70%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Resume Site",
+        "category":"Resume from code",
+        "url":"/resume.html"
+      },
+      {
+        "title":"Old Portfolio",
+        "category":"Legacy portfolio site",
+        "url":"https://j.web.umkc.edu/jmmvd"
+      }
+    ]
+  }
+}
