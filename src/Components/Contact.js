@@ -1,6 +1,18 @@
 import React, { Component } from 'react';
+import Swal  from 'sweetalert2'
 
 class Contact extends Component {
+
+   constructor(props) {
+      super(props)
+      this.handleSubmit = this.handleSubmit.bind(this);
+   }
+
+   handleSubmit(event) {
+      event.preventDefault();
+      Swal.fire('Still in the works');
+    }
+
   render() {
 
     if(this.props.data){
@@ -35,7 +47,7 @@ class Contact extends Component {
          <div className="row">
             <div className="eight columns">
 
-               <form action="" method="post" id="contactForm" name="contactForm">
+               <form  name="contactForm" onSubmit={this.handleSubmit}>
 					<fieldset>
 
                   <div>
