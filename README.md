@@ -5,4 +5,7 @@
 # Deployed through github actions
 
 ## Running locally
-# `yarn start`
+## `yarn start`
+
+## credits
+https://github.com/tbakerx/react-resume-template
