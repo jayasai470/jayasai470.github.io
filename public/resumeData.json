@@ -45,55 +45,55 @@
         "company":"Samsung Electronics America",
         "title":"Engineer 2, Software Process engineering",
         "years":"July 2019 - Present",
-        "description": "Created microservices with FAAS approach using springboot, event driven architecture, AWS and Infrastructure As A Service using Serverless, Cloudformation, Terraform. Used apache flink for real time stream processing with detections using CEP(complex event processing)"
+        "description": "Implemented nodejs backend services deployed on Kubernetes(EKS) using helm and worked on setting up infrastructure using Terraform for serving Global traffic. Used Apache Flink for real time stream processing with detections using CEP(complex event processing). Implemented and maintained in house CMS(Content Management System). Implemented indoor positioning system by proximity using beacons and worked on contact tracing for wearables"
       },
       {
         "company":"Samsung Electronics America (Contractor)",
         "title":"Server Engineer",
         "years":"Aug 2015 - July 2019",
-        "description":"Working on springboot and spring cloud with netflix OSS stack which includes Zuul, Hystrix, Consul, keycloak in a micro service architecture.Dockerizing the app, deploying and maintaining containers in production using Container orchestrations like ECS, EKS (Kubernetes service in AWS)"
+        "description":"Worked with GeoSpatial queries and GeoHashing for Geofence, Location aware based alerts. Used openstreetmaps, leaflet, google maps, here maps for geocoding and plotting. Worked on spring-boot micro-services, MQTT for IOT applications, Serverless lambda execution with function as a service model, Graphql end points, Quartz scheduler for sending geofence based time sheets through email service"
       }
     ],
     "skills":[
       {
-        "name":"Java, NodeJS, Express, Meteor",
-        "level":"80%"
-      },
-      {
-        "name":"AWS",
-        "level":"90%"
-      },
-      {
-        "name": "GoLang",
-        "level": "50%"
-      },
-      {
-        "name":"ReactJs",
-        "level":"50%"
-      },
-      {
-        "name":"Serverless",
+        "name":"Java, NodeJs",
         "level":"95%"
       },
       {
-        "name":"Docker",
-        "level":"80%"
+        "name": "SpringBoot, Express, Serverless",
+        "level": "95%"
       },
       {
-        "name":"Kubernetes, Istio, Helm, Traefik",
-        "level":"70%"
+        "name": "AWS",
+        "level": "95%"
       },
       {
-        "name": "Devops",
-        "level": "70%"
-      },
-      {
-        "name": "Mongodb,Dynamodb",
+        "name": "Kafka, Kinesis, RabbitMQ",
         "level": "90%"
       },
       {
-        "name": "Mysql",
+        "name": "Apache Flink",
         "level": "70%"
+      },
+      {
+        "name":"Kubernetes, Helm, Docker",
+        "level":"85%"
+      },
+      {
+        "name":"Devops, Terraform",
+        "level":"85%"
+      },
+      {
+        "name": "MongoDB, DynamoDB, Redis",
+        "level": "90%"
+      },
+      {
+        "name": "Elastic Search, Mysql, Cassandra",
+        "level": "85%"
+      },
+      {
+        "name": "Rest, WebSocket, MQTT",
+        "level": "95%"
       }
     ]
   },
