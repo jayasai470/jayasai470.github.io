@@ -1,0 +1,199 @@
+<<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> --}}
+        <title>Jay's Resume</title>
+        <link rel="stylesheet" type="text/css" href="./css/local.css">        
+    </head>
+
+    <body>
+        <div id="main" style="margin-top: 5px">
+            <div class="c-document" id="creatorContainer">
+                <div class="c-document__content" id="creatorContent">
+                    <div class="page fFamilyTxtArimo fStyleH1Bold fStyleH1LastBold fStyleH3Bold fStyleH5Bold fStyleH6Italic fStylePersonalTitleBold pagePaddingTop20 pagePaddingRight20 pagePaddingBottom20 pagePaddingLeft20 secSpace15 colSpace20 pageSplitted"
+                        data-template="3" data-id="b346ea4c-b95c-4d46-9cdc-f2c2139bc674" data-user-id="2196787" data-colorset="21"
+                        data-language="en_EN" data-type="cv" data-name="My resume" data-first-name="Jaya Sai" data-last-name="Muppalla">
+                        <div class="dRow firstRow lastRow" style="display: flex;">
+                            <div class="dCol secTitPaddingTop2 secTitPaddingRight20 secTitPaddingBottom4 secTitPaddingLeft20 secTitMarginRight-20 secTitMarginBottom10 secTitMarginLeft-20 dateLayoutLine dateSeparatorDash dateStickSeparatorFrom colorTxtWhite3 colorNameWhite3 colorLastNameWhite3 colorPositionWhite3 colorImgBrdWhite3 colorImgBgWhite3 colorSecTitWhite3 colorSecTitBgNavyBlue2 colorSecTitBrdNavyBlue2 colorSecLineWhite3 colorSecPointWhite3 colorSecPointShadowWhite3 colorEntTitWhite3 colorEntSubWhite3 colorEntBoldWhite3 colorEntIcoWhite3 colorEntIcoBgNavyBlue2 colorIcoWhite3 colorIcoBgNavyBlue2 colorRatOnWhite3 colorRatOffNavyBlue2 colorRatAddNavyBlue2 colorBgNavyBlue3 colorBgHfNavyBlue3 colorDateWhite3 colorDateBgWhite3 firstCol"
+                                style="width: 30%;">
+                                <div class="section sectionType1 sectionBasic fStyleH1Bold fStyleH1LastBold existingSection">
+                                    <div class="entry existingEntry">
+                                        <div class="secType1Acc">
+                                            <div class="secType1AccInitials">jm</div>
+                                        </div>
+                                        <div class="secType1Container">
+                                            <h1>
+                                                <span class="firstname">{{main.firstName}}</span>
+                                                <span class="lastname">{{main.lastName}}</span>
+                                            </h1>
+                                            <h2>{{main.occupation}}</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section sectionType2 sectionPersonal existingSection">
+                                    <h3 class="title">
+                                        <span class="ico"></span>
+                                        <span class="txt">Personal Info</span>
+                                    </h3>
+                                    <div class="entryContainer content">
+                                        <div class="entry personalPhone existingEntry" data-order="2">
+                                            <div class="pointer"></div>
+                                            <div class="ico"></div>
+                                            <h4 class="personalTitle">Phone</h4>
+                                            <div class="personalText">
+                                                <a href="tel:+1{{main.phone}}" rel="nofollow" target="_blank">{{main.phone}}</a>
+                                            </div>
+                                        </div>
+                                        <div class="entry personalEmail entryExample existingEntry" data-order="3">
+                                            <div class="pointer"></div>
+                                            <div class="ico"></div>
+                                            <h4 class="personalTitle">E-mail</h4>
+                                            <div class="personalText">
+                                                <a href="mailto:{{main.email}}" rel="nofollow" target="_blank">{{main.email}}</a>
+                                            </div>
+                                        </div>
+                                        <div class="entry personalWebsite existingEntry" data-order="4">
+                                            <div class="pointer"></div>
+                                            <div class="ico"></div>
+                                            <h4 class="personalTitle">WWW</h4>
+                                            <div class="personalText">
+                                                <a href="{{main.website}}" target="_blank" rel="nofollow">{{main.website}}</a>
+                                            </div>
+                                        </div>
+                                        <div class="entry githubLink existingEntry" data-order="5">
+                                            <div class="pointer"></div>
+                                            <div class="ico"></div>
+                                            <h4 class="personalTitle">GitHub</h4>
+                                            <div class="personalText">
+                                                <a href="https://github.com/jayasai470" target="_blank" rel="nofollow">https://github.com/jayasai470</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section sectionType7 sectionSkills ratingBar ratingTwoLines existingSection">
+                                    <h3 class="title">
+                                        <span class="ico"></span>
+                                        <span class="txt">Skills</span>
+                                    </h3>
+                                    <div class="entryContainer content">
+
+                                        {{#each resume.skills}}
+                                            <div class="entry existingEntry">
+                                            <div class="pointer"></div>
+                                            <h4 class="descShort">
+                                                <p>{{ name }}</p>
+                                                <p></p>
+                                            </h4>
+                                            <div class="rating rating{{rating}}">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                            <div class="text descRating">{{label}}</div>
+                                        </div>
+                                        {{/each}}                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dCol secTitPaddingTop2 secTitPaddingBottom2 secTitMarginBottom10 secTitBorderTopWidth1 secTitBorderTopStyleSolid secTitBorderBottomWidth1 secTitBorderBottomStyleSolid dateLayoutColAll dateLinesDouble dateSeparatorDash dateStickSeparatorFrom colorTxtMediumBlack3 colorNameNavyBlue2 colorLastNameNavyBlue2 colorPositionNavyBlue2 colorImgBrdNavyBlue2 colorImgBgNavyBlue2 colorSecTitNavyBlue2 colorSecTitBgWhite3 colorSecTitBrdLightSilver3 colorSecLineLightSilver3 colorSecPointNavyBlue2 colorSecPointShadowNavyBlue1 colorEntTitMediumBlack3 colorEntSubMediumBlack3 colorEntBoldMediumBlack3 colorEntIcoWhite3 colorEntIcoBgNavyBlue3 colorIcoWhite3 colorIcoBgNavyBlue3 colorRatOnNavyBlue3 colorRatOffLightSilver3 colorRatAddNavyBlue3 colorBgWhite3 colorBgHfWhite3 colorDateMediumBlack3 colorDateBgNavyBlue2 lastCol"
+                                style="width: 70%;">
+                                <div class="section sectionType4 sectionSummary existingSection">
+                                    <h3 class="title">
+                                        <span class="ico"></span>
+                                        <span class="txt">Summary</span>
+                                    </h3>
+                                    <div class="entryContainer content">
+                                        <div class="entry existingEntry">
+                                            <div class="pointer"></div>
+                                            <div class="text desc">
+                                                <p>{{resume.skillmessage}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section sectionType6 sectionExperience existingSection">
+                                    <h3 class="title">
+                                        <span class="ico"></span>
+                                        <span class="txt">Experience</span>
+                                    </h3>
+
+                                    {{#each resume.work}}
+
+                                        <div class="entryContainer">
+                                        <div class="entry existingEntry" data-date-from-year="" data-date-from-month="" data-date-to-year=""
+                                            data-date-to-month="">
+                                            <div class="pointer"></div>
+                                            <div class="dates" style="margin-top: 2px;">
+                                                <span class="dateFrom">{{dateFrom}}</span>
+                                                <span class="dateSeparator"></span>
+                                                <span class="dateTo">{{dateTo}}</span>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="title">
+                                                    <p>{{title}}</p>
+                                                </h5>
+                                                <h6 class="subtitle">
+                                                    <p><b>Employer:</b>{{company}}</p>
+
+                                                    <p></p>
+                                                </h6>
+                                                <div class="text desc">
+                                                    <p></p>
+
+                                                    <ul>
+                                                        {{#each (splitSentences description)}}  
+                                                            <li>{{this}}.</li>  
+                                                        {{/each}}
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{/each}}
+                                </div>
+                                <div class="section sectionType5 sectionEducation existingSection">
+                                    <h3 class="title">
+                                        <span class="ico"></span>
+                                        <span class="txt">Education</span>
+                                    </h3>
+                                    {{#each resume.education }}
+                                        <div class="entryContainer">
+                                        <div class="entry existingEntry" data-date-from-year="" data-date-from-month="" data-date-to-year=""
+                                            data-date-to-month="">
+                                            <div class="pointer"></div>
+                                            <div class="dates" style="margin-top: 2px;">
+                                                <span class="dateFrom">{{dateFrom}}</span>
+                                                <span class="dateSeparator"></span>
+                                                <span class="dateTo">{{dateTo}}</span>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="title">
+                                                    <p>{{school}}</p>
+
+                                                    <p></p>
+                                                </h5>
+                                                <div class="text desc">
+                                                    <p>{{degree}}</p>
+
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{/each}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>

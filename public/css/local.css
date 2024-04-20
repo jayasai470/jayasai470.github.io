@@ -42871,7 +42871,8 @@ select.selectColor.selectBgDarkGreen3 {
 .page {
     word-wrap: break-word;
     overflow-wrap: break-word;
-    word-break: break-word
+    word-break: break-word;
+    page-break-inside: avoid;
 }
 
 .page h1,
