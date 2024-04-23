@@ -16,10 +16,6 @@ class App extends Component {
       foo: 'bar',
       resumeData: {}
     };
-
-    ReactGA.initialize('G-24T9D4431G');
-    ReactGA.pageview(window.location.pathname);
-
   }
 
   getResumeData() {
@@ -31,6 +27,7 @@ class App extends Component {
 
   componentDidMount() {
     this.getResumeData();
+    ReactGA.initialize('G-24T9D4431G');
   }
 
   render() {
