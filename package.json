@@ -12,7 +12,7 @@
     "puppeteer": "^22.6.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-ga": "^3.1.2",
+    "react-ga4": "^2.1.0",
     "react-scripts": "3.4.1",
     "sweetalert2": "^9.17.0"
   },
