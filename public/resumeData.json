@@ -29,7 +29,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"Experience in designing, developing, deploying and maintaining highly available, scalable rest api's which are battle tested and performance optimized using java, nodejs and aws",
+    "skillmessage":"Skilled Backend Developer and DevOps Engineer specializing in architecting scalable, high-performance solutions. Expert in leveraging modern technologies to enhance system reliability and streamline operations.",
     "education":[
       {
         "school":"University of Missouri Kansas City (UMKC)",
@@ -49,19 +49,27 @@
     "work":[
       {
         "company":"Samsung Electronics America",
-        "title":"Engineer 3, Software Process engineering",
-        "years":"March 2022 - Present",
-        "dateFrom": "March 2022",
+        "title":"Staff Engineer, Back-End Server",
+        "years":"Feb 2025 - Present",
+        "dateFrom": "Feb 2025",
         "dateTo": "present",
-        "description": "Developed a GPT-based movie recommendation system to enhance user experience through personalized suggestions. Conducted research and development on custom Retrieval-Augmented Generation (RAG) techniques aimed at delivering tailored movie recommendations. Utilized the LangChain framework in conjunction with Azure OpenAI and OpenAI's language model providers to implement sophisticated AI-driven features. Integrated various vector database stores, including Azure AI Search and Redis vector module, to optimize data retrieval and storage processes. Transitioned the existing logging and observability infrastructure to an OpenTelemetry-based approach, enabling unified collection and analysis of logs, metrics, and traces. Developed a low-latency game streaming platform ensuring high-performance delivery. Engineered automation for virtual game machine provisioning using KubeVirt (Kubernetes + Virtual Machines) for both AWS and OCI metal machines. Implemented game execution on virtual machines with both Nvidia and AMD GPUs using vGPU/SR-IOV on Windows/Linux systems. Innovated an economical method to make game machines accessible by designing a custom Kubernetes host port operator. Established and managed a Rook + Ceph storage cluster to facilitate Read-Only Many (ROX) persistent volume claims, compensating for AWS's lack of native support. Customized the Puppetlabs pvpool controller for Kubernetes volume snapshot making replica creation instant."
+        "description": "Developed, maintained, and lead DevOps tasks for backend systems to support interactive ads with mini-games serving across Samsung TVs in North and South America and Europe. Developed a GPT-based movie recommendation system using custom Retrieval-Augmented Generation (RAG) techniques to enhance user experience with personalized suggestions. Implemented sophisticated AI-driven features by utilizing the LangChain framework with Azure OpenAI and OpenAI's language models, and integrated vector database like Azure AI Search and Redis vector module to optimize data retrieval and storage processes. Managed infrastructure setup and enhancements using Terraform and Helm, including CI/CD pipelines, while upgrading Kubernetes from version 1.26 to 1.33 with zero downtime. Implemented OpenTelemetry for comprehensive log, metric, and trace collection, creating automated dashboards and alerts using metrics. "
       },
       {
         "company":"Samsung Electronics America",
-        "title":"Engineer 2, Software Process engineering",
+        "title":"Engineer 3, Software Process engineer",
+        "years":"March 2022 - Jan 2025",
+        "dateFrom": "March 2022",
+        "dateTo": "Jan 2025",
+        "description": "Developed a low-latency game streaming platform ensuring high-performance delivery. Engineered automation for virtual game machine provisioning using KubeVirt (Kubernetes + Virtual Machines) for both AWS and OCI metal machines. Implemented game execution on virtual machines with both Nvidia and AMD GPUs using vGPU/SR-IOV on Windows/Linux systems. Innovated an economical method to make game machines accessible by designing a custom Kubernetes host port operator. Established and managed a Rook + Ceph storage cluster to facilitate Read-Only Many (ROX) persistent volume claims, compensating for AWS's lack of native support. Enhanced the Puppetlabs PVPool controller by integrating Kubernetes volume snapshots, enabling near-instant PVC replication for efficient game data hosting. "
+      },
+      {
+        "company":"Samsung Electronics America",
+        "title":"Engineer 2, Software Process engineer",
         "years":"July 2019 - Feb 2022",
         "dateFrom": "July 2019",
         "dateTo": "Feb 2022",
-        "description": "Developed NodeJs backend services and successfully deployed them on Kubernetes (EKS) utilizing Helm charts. Developed an indoor positioning system using beacon technology for proximity detection and contributed to contact tracing solutions for wearable devices. Utilized Apache Flink for real-time stream processing and implemented Complex Event Processing (CEP) for advanced event pattern detection. Designed and implemented microservices using a Function-as-a-Service (FAAS) model, adopting an event-driven architecture hosted on AWS, with deployment automation via Serverless framework. Built fully reactive applications leveraging Spring WebFlux, MongoDB, and Kafka for responsive and scalable solutions. Automated the deployment process for single-page React applications using a combination of CDN, Amazon S3, Jenkins, and CircleCI for efficient content delivery."
+        "description": "Developed an indoor positioning system using beacon technology for proximity detection and contributed to contact tracing solutions for wearable devices. Utilized Apache Flink for real-time stream processing and implemented Complex Event Processing (CEP) for advanced event pattern detection. Designed and implemented microservices using a Function-as-a-Service (FAAS) model, adopting an event-driven architecture hosted on AWS, with deployment automation via Serverless framework. Built fully reactive applications leveraging Spring WebFlux, MongoDB, and Kafka for responsive and scalable solutions. "
       },
       {
         "company":"Samsung Electronics America (Contractor)",
@@ -69,7 +77,7 @@
         "years":"Aug 2015 - July 2019",
         "dateFrom": "Aug 2015",
         "dateTo": "July 2019",
-        "description":"Implemented GeoSpatial queries and GeoHashing for Geofence and location-based alert functionalities. Utilized various mapping APIs such as OpenStreetMaps, Leaflet, Google Maps, and HERE Maps for geocoding and data visualization. Gained comprehensive experience in app development, including working with client-side, server-side, CMS (Magnolia), persistence layers, and streaming services (Kafka). Conducted rapid prototyping for proof of concepts with emerging technologies, ensuring their maturity for production-grade deployment on AWS."
+        "description":"Implemented GeoSpatial queries and GeoHashing for Geofence and location-based alert functionalities. Utilized various mapping APIs such as OpenStreetMaps, Leaflet, Google Maps, and HERE Maps for geocoding and data visualization. Contributed to all aspects of app development and DevOps, including client-side, server-side, CMS (Magnolia), and Kafka streaming, ensuring scalable production. Conducted rapid prototyping for proof of concepts with emerging technologies, ensuring their maturity for production-grade deployment on AWS. "
       }
     ],
     "skills":[
@@ -104,10 +112,16 @@
         "label":"Intermediate"
       },
       {
-        "name": "Kafka, Kinesis, Flink",
+        "name": "Kafka, Kinesis",
+        "level": "90%",
+        "rating": 4,
+        "label": "Advanced"
+      },
+      {
+        "name": "Flink",
         "level": "70%",
         "rating": 3,
-        "label": "Intermediate"
+        "label":"Intermediate"
       },
       {
         "name":"Kubernetes, Helm, Docker",
@@ -122,7 +136,19 @@
         "label":"Advanced"
       },
       {
-        "name": "MongoDB, Redis, Mysql",
+        "name": "MongoDB, Redis, Mysql, ElasticSearch",
+        "level": "90%",
+        "rating":4,
+        "label":"Advanced"
+      },
+      {
+        "name": "Prometheus, Traefik, Git(CI/CD), Packer",
+        "level": "90%",
+        "rating":4,
+        "label":"Advanced"
+      },
+      {
+        "name": "OpenTelemetry (metrics + logs + traces)",
         "level": "90%",
         "rating":4,
         "label":"Advanced"
@@ -132,6 +158,12 @@
         "level": "90%",
         "rating":4,
         "label":"Advanced"
+      },
+      {
+        "name": "WebRTC, RTSP, gRPC",
+        "level": "70%",
+        "rating":3,
+        "label":"Intermediate"
       }
     ]
   },

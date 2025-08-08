@@ -3,10 +3,10 @@ const Handlebars = require('handlebars');
 const puppeteer = require('puppeteer');  
 
 // Register the helper  
-Handlebars.registerHelper('splitSentences', function(text) {  
-    return text.split('.').filter(function(sentence) {  
+Handlebars.registerHelper('splitSentences', function(text) {
+    return text.split('. ').filter(function(sentence) {
       return sentence.trim().length > 0;  
-    });  
+    });
 });
   
 // Function to read a file  
@@ -70,7 +70,7 @@ async function generatePDF(html, outputPath) {
     path: outputPath,
     scale: 0.70,
     format: "A4",
-    pageRanges: "2",
+    pageRanges: "1",
     // width: '8.27in',
     // height: '11.7in',
     printBackground: true,

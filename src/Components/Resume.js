@@ -12,7 +12,7 @@ class Resume extends Component {
       })
       var work = this.props.data.work.map(function(work) {  
         // Split the description by full stop and remove any empty strings from the array  
-        var descriptionPoints = work.description.split('.').filter(function(sentence) {  
+        var descriptionPoints = work.description.split('. ').filter(function(sentence) {
             return sentence.trim().length > 0;  
         });  
       
@@ -25,7 +25,7 @@ class Resume extends Component {
         var descriptionListItems = descriptionPoints.map(function(sentence, index) {  
             return (  
                 <li key={index} style={listItemStyle}>  
-                    {sentence.trim()}.  
+                    {sentence.trim()}.
                 </li>  
             );  
         });  
