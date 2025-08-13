@@ -60,7 +60,7 @@ async function generatePDF(html, outputPath) {
   // Set the content of the page to your rendered HTML
   await page.setContent(html);
   await page.addStyleTag({path: './public/css/local.css'});
-  await page.emulateMediaType('screen');
+  // await page.emulateMediaType('screen');
   // await page.setViewport({
   //   width: 1280,
   //   height: 960 
