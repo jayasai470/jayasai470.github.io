@@ -89,9 +89,12 @@ async function generatePDF(html, outputPath) {
   await browser.close();  
 }
 
-// Usage  
-const data = require('../public/resumeData.json')
-  
-generateHTML('resume.hbs', data, './public/resume.html').then(html => {
-    generatePDF(html, './public/jay.pdf')
-});
+(async () => {
+  try {
+    const data = require('../public/resumeData.json');
+    const html = await generateHTML('resume.hbs', data, './public/resume.html');
+    await generatePDF(html, './public/jay.pdf');
+  } catch (error) {
+    console.error('Error processing:', error);
+  }
+})();
