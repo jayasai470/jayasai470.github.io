@@ -92,7 +92,9 @@ async function generatePDF(html, outputPath) {
 (async () => {
   try {
     const data = require('../public/resumeData.json');
+    console.log(data.main.name)
     const html = await generateHTML('resume.hbs', data, './public/resume.html');
+    console.log(`HTML has been generated and written to ${html}`);
     await generatePDF(html, './public/jay.pdf');
   } catch (error) {
     console.error('Error processing:', error);
