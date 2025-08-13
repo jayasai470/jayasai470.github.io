@@ -54,7 +54,7 @@ async function generateHTML(templatePath, data, outputPath) {
 
 async function generatePDF(html, outputPath) {
     // Start a headless browser session  
-  const browser = await puppeteer.launch({headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox']});
+  const browser = await puppeteer.launch({headless: "shell", args: ['--no-sandbox', '--disable-setuid-sandbox']});
   const page = await browser.newPage();
   
   // Set the content of the page to your rendered HTML
