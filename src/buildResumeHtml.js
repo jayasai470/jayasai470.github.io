@@ -54,13 +54,28 @@ async function generateHTML(templatePath, data, outputPath) {
 
 async function generatePDF(html, outputPath) {
     // Start a headless browser session  
-  const browser = await puppeteer.launch({headless: "shell", args: ['--no-sandbox', '--disable-setuid-sandbox']});
+  const browser = await puppeteer.launch({
+    headless: "shell",
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-dev-shm-usage',
+      '--font-render-hinting=none'
+    ]
+  });
   const page = await browser.newPage();
-  
+
+  page.on('console', msg => console.log('PAGE:', msg.text()));
+  page.on('pageerror', err => console.error('PAGE ERROR:', err));
+  page.on('requestfailed', req =>
+      console.error('REQUEST FAILED:', req.url(), req.failure()?.errorText)
+  );
+
+
   // Set the content of the page to your rendered HTML
   await page.setContent(html);
   await page.addStyleTag({path: './public/css/local.css'});
-  await page.emulateMediaType('screen');
+  await page.emulateMediaType('print');
   // await page.setViewport({
   //   width: 1280,
   //   height: 960 
