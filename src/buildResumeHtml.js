@@ -55,7 +55,7 @@ async function generateHTML(templatePath, data, outputPath) {
 async function generatePDF(html, outputPath) {
     // Start a headless browser session  
   const browser = await puppeteer.launch({
-    headless: "shell",
+    headless: "true",
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
@@ -73,9 +73,14 @@ async function generatePDF(html, outputPath) {
 
 
   // Set the content of the page to your rendered HTML
-  await page.setContent(html);
+  await page.setContent(html, { waitUntil: 'networkidle0' });
   await page.addStyleTag({path: './public/css/local.css'});
   await page.emulateMediaType('print');
+  // Wait for fonts/layout
+  if (await page.evaluate(() => !!document.fonts)) {
+    await page.evaluate(() => document.fonts.ready);
+  }
+  await page.evaluate(() => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r))));
   // await page.setViewport({
   //   width: 1280,
   //   height: 960 
@@ -89,6 +94,7 @@ async function generatePDF(html, outputPath) {
     // width: '8.27in',
     // height: '11.7in',
     printBackground: true,
+    preferCSSPageSize: true,
     // displayHeaderFooter: true,
     // headerTemplate: '<div style="font-size:10px; color: #333; margin-left: 20px;">My Custom Header</div>',  
     // footerTemplate: '<div style="font-size:10px; color: #333; margin-left: 20px;">Page <span class="pageNumber"></span> of <span class="totalPages"></span></div>',
