@@ -16,7 +16,7 @@ function readFile(filePath) {
       if (err) reject(err);  
       else resolve(data);  
     });  
-  });  
+  });
 }  
   
 // Function to write a file  
@@ -39,7 +39,7 @@ async function generateHTML(templatePath, data, outputPath) {
     const template = Handlebars.compile(templateSource);  
       
     // Generate the HTML with the provided data  
-    const html = template(data);  
+    const html = template(data);
       
     // Write the HTML to the specified output file  
     await writeFile(outputPath, html);  
@@ -70,7 +70,7 @@ async function generatePDF(html, outputPath) {
     path: outputPath,
     scale: 0.70,
     format: "A4",
-    pageRanges: "1",
+    // pageRanges: "1",
     // width: '8.27in',
     // height: '11.7in',
     printBackground: true,
@@ -92,9 +92,7 @@ async function generatePDF(html, outputPath) {
 (async () => {
   try {
     const data = require('../public/resumeData.json');
-    console.log(data.main.name)
     const html = await generateHTML('resume.hbs', data, './public/resume.html');
-    console.log(`HTML has been generated and written to ${html}`);
     await generatePDF(html, './public/jay.pdf');
   } catch (error) {
     console.error('Error processing:', error);
