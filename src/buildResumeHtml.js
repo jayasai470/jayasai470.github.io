@@ -90,7 +90,7 @@ async function generatePDF(html, outputPath) {
     path: outputPath,
     scale: 0.70,
     format: "A4",
-    // pageRanges: "1",
+    pageRanges: "1",
     // width: '8.27in',
     // height: '11.7in',
     printBackground: true,
