@@ -1,3 +1,20 @@
+//stitcher-service
+Architected a server-side, ad-supported linear "FAST channel" streaming platform for Samsung Smart TVs, assembling looping and scheduled playlists into continuous live streams.
+Implemented server-side ad insertion (SSAI) via SCTE-35 markers, splicing ad breaks, slates, and bumpers directly into the live stream without client-side ad logic.
+Designed a scheduling engine allowing fixed-time-window content blocks on an otherwise looping channel, with automatic filler coverage and publish-time overrun validation.
+Built real-time EPG (Electronic Program Guide) generation with multi-language, multi-market program metadata kept in sync with live playlist state.
+Enabled CMS for live, in-place channel editing content, overlays, and ad placements can be added, removed, or reordered on a running channel and republished without stream interruption.
+Developed the backend in Node.js/NestJS on Kubernetes (EKS) with MySQL-backed playlist, channel, and content-asset persistence, delivering content via HLS through a CDN-backed origin.
+Built a custom Kubernetes controller that reconciles published channels in the database with corresponding Kubernetes custom resources (CRDs), keeping cluster state automatically in sync.
+
+//mini-games
+Built a VAST-compliant ad service generating VAST XML ad tags that route Samsung TV ad inventory to a portfolio of interactive mini-games (trivia, Ripplash, etc.) served as playable ad creative.
+Implemented VAST tracking event handling (impression, start, complete, click) feeding into a real-time analytics pipeline.
+Created the analytics pipeline using AWS Kinesis, S3, Glue, and Athena to capture, catalog, and query VAST tracking/engagement events, with QuickSight dashboards for playable-ad performance reporting.
+Integrated the VAST ad service with stitcher-service's channel engine, supplying playable ad content for server-side ad breaks on live linear channels.
+Developed the mini-game experiences as standalone, lightweight web apps optimized for Samsung TV-remote interaction.
+Built the service on Node.js/NestJS, deployed on Kubernetes (EKS) via Helm, with CI/CD automation through GitLab.
+
 //gamehub
 Developed a low-latency game streaming platform ensuring high-performance delivery.
 Engineered automation for virtual game machine provisioning using KubeVirt (Kubernetes + Virtual Machines) for both AWS and OCI metal machines.
@@ -35,34 +52,4 @@ Utilized various mapping APIs such as OpenStreetMaps, Leaflet, Google Maps, and 
 Gained comprehensive experience in app development, including working with client-side, server-side, CMS (Magnolia), persistence layers, and streaming services (Kafka).
 Designed and developed a reactive user interface that updates in real-time using Meteor, Handlebars, and MongoDB.
 Developed Spring Boot microservices and IoT applications with MQTT protocol for message communication.
-Conducted rapid prototyping for proof of concepts with emerging technologies, ensuring their maturity for production-grade deployment on AWS.
-
-
-// gamehub
-Developed a low-latency game streaming platform ensuring high-performance delivery.
-Engineered automation for virtual game machine provisioning using KubeVirt (Kubernetes + Virtual Machines) for both AWS and OCI metal machines.
-Implemented game execution on virtual machines with both Nvidia and AMD GPUs using vGPU/SR-IOV on Windows/Linux systems.
-Innovated an economical method to make game machines accessible by designing a custom Kubernetes host port operator.
-Established and managed a Rook + Ceph storage cluster to facilitate Read-Only Many (ROX) persistent volume claims, compensating for AWS's lack of native support.
-Customized the Puppetlabs pvpool controller for Kubernetes volume snapshot management, improving data recovery processes.
-
-//geny
-Developed a GPT-based movie recommendation system to enhance user experience through personalized suggestions.
-Conducted research and development on custom Retrieval-Augmented Generation (RAG) techniques aimed at delivering tailored movie recommendations.
-Utilized the LangChain framework in conjunction with Azure OpenAI and OpenAI's language model providers to implement sophisticated AI-driven features.
-Integrated various vector database stores, including Azure AI Search and Redis vector module, to optimize data retrieval and storage processes.
-Transitioned the existing logging and observability infrastructure to an OpenTelemetry-based approach, enabling unified collection and analysis of logs, metrics, and traces.
-
-//podcast + gamehub
-Developed Node.js backend services and successfully deployed them on Kubernetes (EKS) utilizing Helm charts.
-Developed an indoor positioning system using beacon technology for proximity detection and contributed to contact tracing solutions for wearable devices.
-Utilized Apache Flink for real-time stream processing and implemented Complex Event Processing (CEP) for advanced event pattern detection.
-Designed and implemented microservices using a Function-as-a-Service (FAAS) model, adopting an event-driven architecture hosted on AWS, with deployment automation via Serverless framework.
-Built fully reactive applications leveraging Spring WebFlux, MongoDB, and Kafka for responsive and scalable solutions.
-Automated the deployment process for single-page React applications using a combination of CDN, Amazon S3, Jenkins, and CircleCI for efficient content delivery.
-
-//splus
-Implemented GeoSpatial queries and GeoHashing for Geofence and location-based alert functionalities.
-Utilized various mapping APIs such as OpenStreetMaps, Leaflet, Google Maps, and HERE Maps for geocoding and data visualization.
-Gained comprehensive experience in app development, including working with client-side, server-side, CMS (Magnolia), persistence layers, and streaming services (Kafka).
 Conducted rapid prototyping for proof of concepts with emerging technologies, ensuring their maturity for production-grade deployment on AWS.
