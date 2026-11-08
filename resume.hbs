@@ -10,7 +10,10 @@
 
 <body>
     <div class="resume">
-        <header class="resume-header">
+        <!-- A plain <div>, not <header>: ATS parsers routinely discard semantic
+             <header>/<footer> regions as boilerplate, which would take the contact
+             details with them. Styling is class-based, so this is visually identical. -->
+        <div class="resume-header">
             <h1>{{main.name}}</h1>
             <p class="resume-title">{{main.occupation}}</p>
             <p class="resume-contact">
@@ -21,7 +24,7 @@
                 {{#if main.linkedinUrl}}<span><a href="{{main.linkedinUrl}}">{{main.linkedinDisplay}}</a></span>{{/if}}
                 {{#if main.githubUrl}}<span><a href="{{main.githubUrl}}">{{main.githubDisplay}}</a></span>{{/if}}
             </p>
-        </header>
+        </div>
 
         <section class="resume-section">
             <h2>Summary</h2>
@@ -64,6 +67,16 @@
                     {{/each}}
                 </article>
             {{/each}}
+        </section>
+
+        <!-- Compact on purpose: each system is already described in the experience
+             bullets above and every tech tag already appears under Skills, so this is
+             a scannable index of named systems rather than a second pass over the same
+             prose. Titles only — the two-page budget has ~4px of slack, so adding the
+             tags back here spills onto a third page. -->
+        <section class="resume-section">
+            <h2>Selected Projects</h2>
+            <p class="resume-projects">{{#each projects}}<strong>{{title}}</strong>{{#unless @last}}<span class="resume-project-sep"> &middot; </span>{{/unless}}{{/each}}</p>
         </section>
 
         <section class="resume-section">
