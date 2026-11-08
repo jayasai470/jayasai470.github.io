@@ -1,180 +1,270 @@
 {
   "main": {
-    "name":"Jaya Sai Krishna Muppalla",
+    "name": "Jaya Sai Krishna Muppalla",
     "firstName": "Jaya Sai Krishna",
     "lastName": "Muppalla",
-    "occupation":"Software Engineer",
-    "description":"Currently working as Backend developer in Samsung",
-    "bio":"A programming enthusiast, who is always eager to learn new technologies and develop something fun.",
-    "contactmessage":"Have a project for me? Think I'd be a good fit for your team? I'd love to hear from you, give me a shout by email.",
-    "email": "jayasai470@gmail.com",
-    "phone": "618-946-5202",
-    "address":{
-      "city":"Dallas",
-      "state":"Texas"
-    },
+    "occupation": "Staff Software Engineer",
+    "tagline": "Backend & DevOps Engineer: distributed systems, Kubernetes, and cloud infrastructure at scale",
+    "bio": "I'm a Staff Software Engineer with over 11 years of experience designing and operating backend platforms and cloud infrastructure for Samsung Electronics. My systems are distributed and Kubernetes-native, serving interactive advertising, AI-driven recommendations, and game streaming to millions of devices across North America, South America, and Europe. I also lead the DevOps side of the work: CI/CD, observability, and infrastructure as code.",
+    "contactmessage": "Open to new opportunities and collaborations. If you'd like to talk about a role, a project, or just distributed systems and Kubernetes, reach out.",
+    "email": "jayasai.muppalla@gmail.com",
+    "phone": "214-802-7606",
     "website": "https://jayasai470.github.io",
-    "resumedownload":"jay.pdf",
-    "social":[
+    "resumedownload": "Jaya-Sai-Krishna-Muppalla-Resume.pdf",
+    "address": {
+      "city": "Dallas",
+      "state": "TX"
+    },
+    "social": [
       {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/in/jaya-sai-krishna-muppalla-0b99951a0/",
-        "className":"fa fa-linkedin"
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/jaymuppalla",
+        "icon": "linkedin"
       },
       {
-        "name":"github",
-        "url":"http://github.com/jayasai470",
-        "className":"fa fa-github"
+        "name": "github",
+        "url": "http://github.com/jayasai470",
+        "icon": "github"
+      },
+      {
+        "name": "email",
+        "url": "mailto:jayasai.muppalla@gmail.com",
+        "icon": "mail"
       }
     ]
   },
-  "resume":{
-    "skillmessage":"Skilled Backend Developer and DevOps Engineer specializing in architecting scalable, high-performance solutions. Expert in leveraging modern technologies to enhance system reliability and streamline operations.",
-    "education":[
+  "resume": {
+    "skillmessage": "My work spans both ends of the stack: the Kubernetes platforms and cloud infrastructure a team depends on, and the backend services, streaming data pipelines, and applied AI/RAG features that run on top of them. I'd rather automate a problem away than write a runbook for it.",
+    "summary": "Staff Software Engineer with 11 years designing and operating backend platforms and cloud infrastructure for Samsung Electronics at consumer scale. Builds Kubernetes platforms, cloud-native backend services, streaming data pipelines, and applied AI/RAG systems, and owns the CI/CD, observability, and on-call practices behind them.",
+    "education": [
       {
-        "school":"University of Missouri Kansas City (UMKC)",
-        "degree":"Masters in Computer Science",
-        "graduated":"May 2015",
-        "dateFrom":"Aug 2013",
+        "school": "University of Missouri Kansas City (UMKC)",
+        "degree": "Master of Science, Computer Science",
+        "dateFrom": "Aug 2013",
         "dateTo": "May 2015"
       },
       {
-        "school":"Jawaharlal Nehru Technological University",
-        "degree":"Bachelor's in Electronics and Communication Engineering",
-        "graduated":"April 2013",
+        "school": "Jawaharlal Nehru Technological University",
+        "degree": "Bachelor of Technology, Electronics and Communication Engineering",
         "dateFrom": "May 2009",
         "dateTo": "April 2013"
       }
     ],
-    "work":[
+    "skillCategories": [
       {
-        "company":"Samsung Electronics America",
-        "title":"Staff Engineer, Back-End Server",
-        "years":"Feb 2025 - Present",
-        "dateFrom": "Feb 2025",
-        "dateTo": "present",
-        "description": "Developed, maintained, and lead DevOps tasks for backend systems to support interactive ads with mini-games serving across Samsung TVs in North and South America and Europe. Developed a GPT-based movie recommendation system using custom Retrieval-Augmented Generation (RAG) techniques to enhance user experience with personalized suggestions. Implemented sophisticated AI-driven features by utilizing the LangChain framework with Azure OpenAI and OpenAI's language models, and integrated vector database like Azure AI Search and Redis vector module to optimize data retrieval and storage processes. Managed infrastructure setup and enhancements using Terraform and Helm, including CI/CD pipelines, while upgrading Kubernetes from version 1.26 to 1.33 with zero downtime. Implemented OpenTelemetry for comprehensive log, metric, and trace collection, creating automated dashboards and alerts using metrics. "
+        "category": "Languages & Frameworks",
+        "items": [
+          "Java",
+          "Node.js",
+          "TypeScript",
+          "Go",
+          "Python",
+          "Spring Boot",
+          "Express",
+          "NestJS",
+          "Spring WebFlux"
+        ]
       },
       {
-        "company":"Samsung Electronics America",
-        "title":"Engineer 3, Software Process engineer",
-        "years":"March 2022 - Jan 2025",
-        "dateFrom": "March 2022",
-        "dateTo": "Jan 2025",
-        "description": "Developed a low-latency game streaming platform ensuring high-performance delivery. Engineered automation for virtual game machine provisioning using KubeVirt (Kubernetes + Virtual Machines) for both AWS and OCI metal machines. Implemented game execution on virtual machines with both Nvidia and AMD GPUs using vGPU/SR-IOV on Windows/Linux systems. Innovated an economical method to make game machines accessible by designing a custom Kubernetes host port operator. Established and managed a Rook + Ceph storage cluster to facilitate Read-Only Many (ROX) persistent volume claims, compensating for AWS's lack of native support. Enhanced the Puppetlabs PVPool controller by integrating Kubernetes volume snapshots, enabling near-instant PVC replication for efficient game data hosting. "
+        "category": "Cloud & Infrastructure",
+        "items": [
+          "AWS",
+          "Azure",
+          "OCI",
+          "Kubernetes",
+          "Helm",
+          "Docker",
+          "KubeVirt",
+          "Terraform",
+          "Serverless Framework",
+          "Packer"
+        ]
       },
       {
-        "company":"Samsung Electronics America",
-        "title":"Engineer 2, Software Process engineer",
-        "years":"July 2019 - Feb 2022",
-        "dateFrom": "July 2019",
-        "dateTo": "Feb 2022",
-        "description": "Developed an indoor positioning system using beacon technology for proximity detection and contributed to contact tracing solutions for wearable devices. Utilized Apache Flink for real-time stream processing and implemented Complex Event Processing (CEP) for advanced event pattern detection. Designed and implemented microservices using a Function-as-a-Service (FAAS) model, adopting an event-driven architecture hosted on AWS, with deployment automation via Serverless framework. Built fully reactive applications leveraging Spring WebFlux, MongoDB, and Kafka for responsive and scalable solutions. "
+        "category": "Data & Messaging",
+        "items": [
+          "Kafka",
+          "Kinesis",
+          "Apache Flink",
+          "MongoDB",
+          "Redis",
+          "MySQL",
+          "Elasticsearch"
+        ]
       },
       {
-        "company":"Samsung Electronics America (Contractor)",
-        "title":"Server Engineer",
-        "years":"Aug 2015 - July 2019",
-        "dateFrom": "Aug 2015",
-        "dateTo": "July 2019",
-        "description":"Implemented GeoSpatial queries and GeoHashing for Geofence and location-based alert functionalities. Utilized various mapping APIs such as OpenStreetMaps, Leaflet, Google Maps, and HERE Maps for geocoding and data visualization. Contributed to all aspects of app development and DevOps, including client-side, server-side, CMS (Magnolia), and Kafka streaming, ensuring scalable production. Conducted rapid prototyping for proof of concepts with emerging technologies, ensuring their maturity for production-grade deployment on AWS. "
+        "category": "Observability & CI/CD",
+        "items": [
+          "OpenTelemetry",
+          "CloudWatch",
+          "PagerDuty",
+          "Prometheus",
+          "Grafana",
+          "Traefik",
+          "GitLab CI/CD",
+          "GitHub Actions",
+          "Jenkins"
+        ]
+      },
+      {
+        "category": "APIs & Protocols",
+        "items": [
+          "REST",
+          "GraphQL",
+          "WebSocket",
+          "gRPC",
+          "MQTT",
+          "WebRTC",
+          "RTSP",
+          "SCTE-35",
+          "VAST"
+        ]
+      },
+      {
+        "category": "AI & Data Retrieval",
+        "items": [
+          "Agentic AI",
+          "Claude",
+          "Amazon Bedrock",
+          "Codex",
+          "LangChain",
+          "Azure OpenAI",
+          "OpenAI API",
+          "Retrieval-Augmented Generation (RAG)",
+          "Vector Search"
+        ]
       }
     ],
-    "skills":[
+    "work": [
       {
-        "name":"Java, NodeJs",
-        "level":"95%",
-        "rating": 5,
-        "label": "Expertise"
+        "company": "Samsung Electronics America",
+        "title": "Staff Engineer, Back-End Server",
+        "dateFrom": "Feb 2025",
+        "dateTo": "Present",
+        "summary": "Lead backend and DevOps engineer for Samsung TV's interactive advertising platform, spanning server-side ad insertion, playable ad experiences, and AI-driven recommendations.",
+        "highlights": [
+          "Architected a server-side, ad-supported linear \"FAST channel\" streaming platform for Samsung Smart TVs on Node.js/NestJS and Kubernetes (EKS), assembling looping and scheduled playlists into continuous live streams delivered via HLS through a CDN-backed origin.",
+          "Implemented server-side ad insertion (SSAI) using SCTE-35 markers and built a scheduling engine for fixed-time-window content blocks with automatic filler coverage, enabling live, in-place channel editing with zero stream interruption.",
+          "Built a custom Kubernetes controller that reconciles published channels in MySQL with corresponding Kubernetes CRDs, and a VAST-compliant ad service routing TV ad inventory to a portfolio of interactive mini-games served as playable ad creative.",
+          "Designed a real-time analytics pipeline (AWS Kinesis, S3, Glue, Athena) capturing VAST tracking events, with QuickSight dashboards for playable-ad performance reporting.",
+          "Developed a GPT-based movie recommendation system using custom Retrieval-Augmented Generation (RAG) with LangChain, Azure OpenAI, and vector search (Azure AI Search, Redis).",
+          "Owned a seven-version, zero-downtime Kubernetes upgrade (1.26 to 1.33) with a staged rollout, per-step validation, and a documented rollback runbook.",
+          "Manage infrastructure as code with Terraform and Helm as the single path to production.",
+          "Carry on-call for these backend systems, shaping alerting from real incidents and automating recurring remediations to cut repeat pages.",
+          "Migrated observability to OpenTelemetry for unified logs, metrics, and traces, with CloudWatch dashboards and PagerDuty integration for on-call routing."
+        ],
+        "years": "Feb 2025 – Present"
       },
       {
-        "name": "SpringBoot, Express, NestJS",
-        "level": "95%",
-        "rating": 4,
-        "label": "Advanced"
+        "company": "Samsung Electronics America",
+        "title": "Engineer 3, Software Process Engineer",
+        "dateFrom": "March 2022",
+        "dateTo": "Jan 2025",
+        "summary": "Built and operated a low-latency cloud game streaming platform, engineering GPU virtualization and storage systems for a custom Kubernetes-based game infrastructure.",
+        "highlights": [
+          "Engineered automation for virtual game machine provisioning using KubeVirt (Kubernetes + VMs) across AWS and OCI bare-metal, running games on Nvidia and AMD GPUs via vGPU/SR-IOV on Windows and Linux.",
+          "Automated optimized EKS/OKE machine images for game streaming using Packer (qcow2 format), including host GPU driver management, to streamline deployment.",
+          "Designed a custom Kubernetes host-port operator to make game machines accessible economically, and containerized Windows games to run on Linux using Wine.",
+          "Established and managed a Rook + Ceph storage cluster to support Read-Only-Many (ROX) persistent volumes, compensating for a gap in native AWS support.",
+          "Extended the Puppetlabs PVPool controller with Kubernetes volume snapshots, enabling near-instant PVC replication for efficient game data hosting.",
+          "Delivered sub-100ms end-to-end latency for interactive cloud gameplay across the platform."
+        ],
+        "years": "March 2022 – Jan 2025"
       },
       {
-        "name": "GoLang, Python",
-        "level": "70%",
-        "rating": 3,
-        "label": "Intermediate"
+        "company": "Samsung Electronics America",
+        "title": "Engineer 2, Software Process Engineer",
+        "dateFrom": "July 2019",
+        "dateTo": "Feb 2022",
+        "summary": "Built reactive, event-driven microservices and real-time stream processing systems for wearable and B2B platforms.",
+        "highlights": [
+          "Built and operated Node.js backend services on Kubernetes (EKS), deployed via Helm, powering B2B applications across Samsung's wearable platform.",
+          "Built an indoor positioning system using beacon technology for proximity detection and contributed to contact-tracing solutions for wearable devices.",
+          "Used Apache Flink for real-time stream processing with Complex Event Processing (CEP) for advanced event pattern detection.",
+          "Designed event-driven microservices on a Function-as-a-Service (FaaS) model on AWS, with deployment automation via the Serverless framework.",
+          "Built fully reactive applications with Spring WebFlux, MongoDB, and Kafka, and designed GraphQL APIs for client data access.",
+          "Engineered multi-region traffic infrastructure with Terraform to meet regulatory compliance requirements, and ran the team's private npm/Helm artifact repositories (Sinopia, S3)."
+        ],
+        "years": "July 2019 – Feb 2022"
       },
       {
-        "name": "AWS",
-        "level": "95%",
-        "rating": 5,
-        "label":"Expertise"
-      },
-      {
-        "name": "Azure, OCI",
-        "level": "70%",
-        "rating": 3,
-        "label":"Intermediate"
-      },
-      {
-        "name": "Kafka, Kinesis",
-        "level": "90%",
-        "rating": 4,
-        "label": "Advanced"
-      },
-      {
-        "name": "Flink",
-        "level": "70%",
-        "rating": 3,
-        "label":"Intermediate"
-      },
-      {
-        "name":"Kubernetes, Helm, Docker",
-        "level":"95%",
-        "rating":5,
-        "label":"Expertise"
-      },
-      {
-        "name":"Devops, Terraform, Serverless",
-        "level":"90%",
-        "rating":4,
-        "label":"Advanced"
-      },
-      {
-        "name": "MongoDB, Redis, Mysql, ElasticSearch",
-        "level": "90%",
-        "rating":4,
-        "label":"Advanced"
-      },
-      {
-        "name": "Prometheus, Traefik, Git(CI/CD), Packer",
-        "level": "90%",
-        "rating":4,
-        "label":"Advanced"
-      },
-      {
-        "name": "OpenTelemetry (metrics + logs + traces)",
-        "level": "90%",
-        "rating":4,
-        "label":"Advanced"
-      },
-      {
-        "name": "Rest, WebSocket, MQTT, GraphQL",
-        "level": "90%",
-        "rating":4,
-        "label":"Advanced"
-      },
-      {
-        "name": "WebRTC, RTSP, gRPC",
-        "level": "70%",
-        "rating":3,
-        "label":"Intermediate"
+        "company": "First Object Inc",
+        "title": "Server Engineer (Contracted to Samsung Electronics America)",
+        "dateFrom": "Aug 2015",
+        "dateTo": "July 2019",
+        "summary": "Delivered geospatial, serverless backend services and full-stack applications across global regions.",
+        "highlights": [
+          "Developed and deployed a serverless stack across multiple global regions to minimize latency, with GeoSpatial queries and GeoHashing powering geofence and location-based alerting.",
+          "Integrated mapping APIs including OpenStreetMap, Leaflet, Google Maps, and HERE Maps for geocoding and data visualization.",
+          "Built Spring Boot microservices and IoT applications using the MQTT protocol for device communication.",
+          "Designed a reactive, real-time UI using Meteor, Handlebars, and MongoDB, and contributed across the stack including CMS (Magnolia) and Kafka streaming.",
+          "Conducted rapid prototyping of proof-of-concept systems and matured them into production-grade AWS deployments."
+        ],
+        "years": "Aug 2015 – July 2019"
       }
     ]
   },
-  "portfolio":{
-    "projects": [
-      {
-        "title":"Resume Site",
-        "category":"Resume from code",
-        "url":"/resume.html",
-        "image": "./portfolio-resume.jpg"
-      }
-    ]
-  }
+  "projects": [
+    {
+      "title": "FAST Channel Streaming Platform",
+      "tags": [
+        "Node.js",
+        "NestJS",
+        "Kubernetes",
+        "SCTE-35",
+        "HLS"
+      ],
+      "summary": "Server-side, ad-supported linear streaming platform for Samsung Smart TVs that assembles looping and scheduled playlists into continuous live channels, with server-side ad insertion and live, in-place channel editing with zero downtime."
+    },
+    {
+      "title": "Playable Ads & Mini-Games Platform",
+      "tags": [
+        "NestJS",
+        "VAST",
+        "AWS Kinesis",
+        "QuickSight"
+      ],
+      "summary": "VAST-compliant ad service that routes Samsung TV ad inventory to a portfolio of interactive mini-games served as playable ad creative, backed by a real-time analytics pipeline for engagement and performance reporting."
+    },
+    {
+      "title": "GPT Movie Recommendation Engine",
+      "tags": [
+        "LangChain",
+        "Azure OpenAI",
+        "RAG",
+        "Vector Search"
+      ],
+      "summary": "GPT-based recommendation system using custom Retrieval-Augmented Generation to deliver personalized movie suggestions, with Azure AI Search and Redis vector stores for retrieval and OpenTelemetry for unified observability."
+    },
+    {
+      "title": "Cloud Game Streaming Infrastructure",
+      "tags": [
+        "KubeVirt",
+        "vGPU",
+        "Rook/Ceph",
+        "Packer"
+      ],
+      "summary": "Low-latency game streaming platform with automated virtual machine provisioning across AWS and OCI bare-metal, GPU virtualization via vGPU/SR-IOV, and a custom Rook + Ceph storage cluster for shared persistent volumes."
+    },
+    {
+      "title": "Reactive Wearables & IoT Backend",
+      "tags": [
+        "Spring WebFlux",
+        "Kafka",
+        "Flink",
+        "Serverless"
+      ],
+      "summary": "Event-driven microservices and real-time stream processing for wearable device platforms, including indoor positioning, contact tracing, and Function-as-a-Service deployments on AWS."
+    },
+    {
+      "title": "Global Serverless Geospatial Backend",
+      "tags": [
+        "AWS",
+        "GeoHashing",
+        "Spring Boot",
+        "MQTT"
+      ],
+      "summary": "Multi-region serverless backend powering geofence and location-based alerts, using GeoHashing and mapping API integrations across OpenStreetMap, Google Maps, and HERE Maps."
+    }
+  ]
 }

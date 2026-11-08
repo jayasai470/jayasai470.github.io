@@ -1,50 +1,42 @@
 {
   "name": "portfolio",
-  "homepage": "https://jayasai470.github.io",
   "version": "0.1.0",
   "private": true,
+  "description": "Portfolio and resume site for Jaya Sai Krishna Muppalla, built with Vite + React and a single YAML source of truth for site content and the generated PDF resume.",
+  "author": "Jaya Sai Krishna Muppalla",
+  "homepage": "https://jayasai470.github.io",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "framer-motion": "^1.11.1",
-    "handlebars": "^4.7.8",
-    "puppeteer": "^24.16.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-ga4": "^2.1.0",
-    "react-scripts": "3.4.1",
-    "sweetalert2": "^9.17.0"
+    "handlebars": "^4.7.10",
+    "motion": "^14.10.1",
+    "puppeteer": "^25.16.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-ga4": "^3.0.1",
+    "yaml": "^2.9.1"
   },
   "scripts": {
-    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build:file": "node src/buildResumeHtml.js",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "flow": "flow check",
-    "lint": "./node_modules/.bin/flow check",
-    "precommit": "lint-staged && yarn test",
+    "build:content": "node scripts/build-content.mjs",
+    "dev": "yarn build:content && vite",
+    "start": "yarn dev",
+    "build:file": "yarn build:content && node scripts/build-resume.cjs",
+    "build": "yarn build:content && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -b master -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "deploy": "gh-pages -b master -d dist"
   },
   "devDependencies": {
-    "flow-bin": "^0.129.0",
-    "gh-pages": "^6.3.0"
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@vitejs/plugin-react": "^6.2.1",
+    "gh-pages": "^6.3.0",
+    "jsdom": "27",
+    "vite": "^8.3.6",
+    "vitest": "^5.1.0"
   }
 }
