@@ -35,7 +35,7 @@
   },
   "resume": {
     "skillmessage": "My work spans both ends of the stack: the Kubernetes platforms and cloud infrastructure a team depends on, and the backend services, streaming data pipelines, and applied AI/RAG features that run on top of them. I'd rather automate a problem away than write a runbook for it.",
-    "summary": "Staff Software Engineer with 11 years designing and operating backend platforms and cloud infrastructure for Samsung Electronics at consumer scale. Builds Kubernetes platforms, cloud-native backend services, streaming data pipelines, and applied AI/RAG systems, and owns the CI/CD, observability, and on-call practices behind them.",
+    "summary": "Staff Software Engineer with 11 years designing and operating distributed systems and cloud infrastructure for Samsung Electronics at consumer scale. Builds Kubernetes platforms, cloud-native backend services, streaming data pipelines, and applied AI/RAG systems, and owns the CI/CD, observability, and on-call practices behind them.",
     "education": [
       {
         "school": "University of Missouri Kansas City (UMKC)",
