@@ -88,7 +88,22 @@ a job/project/skill.
    children can report a misleadingly-clamped `scrollWidth`).
 10. Bumped Node to 24 everywhere (`.nvmrc`, `package.json#engines`,
     the CI matrix) and installed/switched the local dev environment to it.
-11. Simplified `scripts/build-resume.cjs`: it no longer writes an intermediate
+11. Replaced the hand-maintained `apt-get install libatk1.0-0 libc6 ...` package
+    list in CI (used to satisfy Puppeteer's bundled Chromium's shared-library
+    deps) with pointing `PUPPETEER_EXECUTABLE_PATH` at the Google Chrome that's
+    already preinstalled on GitHub's `ubuntu-latest` runner image, and setting
+    `PUPPETEER_SKIP_DOWNLOAD: true` on the install step so Puppeteer doesn't also
+    download its own Chromium in CI. That package list broke whenever Ubuntu
+    renamed a library (this session alone: `libgdk-pixbuf2.0-0` ->
+    `libgdk-pixbuf-2.0-0`) — GitHub keeps the preinstalled browser working across
+    runner image bumps, so this is no longer something to maintain by hand.
+    Puppeteer reads `PUPPETEER_EXECUTABLE_PATH` from the environment automatically
+    (`node_modules/puppeteer/lib/puppeteer/getConfiguration.js`), so
+    `scripts/build-resume.cjs` needed no code change — `puppeteer.launch()` still
+    takes no `executablePath` option and still works unmodified on a local machine
+    (which doesn't set that env var, so it keeps using Puppeteer's own downloaded
+    Chromium as before).
+12. Simplified `scripts/build-resume.cjs`: it no longer writes an intermediate
     `public/resume.html` (that file was a leftover from the old CRA-era site, which
     is gone — nothing reads it anymore). The Handlebars template now renders
     straight to an in-memory string that's handed to Puppeteer. `public/resume.html`
