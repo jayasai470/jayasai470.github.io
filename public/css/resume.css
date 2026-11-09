@@ -109,21 +109,6 @@ body {
     color: #14151c;
 }
 
-/* Selected Projects */
-
-.resume-projects {
-    margin: 0;
-}
-
-.resume-projects strong {
-    color: #14151c;
-}
-
-.resume-project-sep {
-    font-weight: normal;
-    color: #9aa0ad;
-}
-
 /* Experience: company groups + nested roles */
 
 .resume-company {

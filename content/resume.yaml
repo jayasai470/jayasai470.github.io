@@ -106,13 +106,15 @@ experience:
       - Engineered multi-region traffic infrastructure with Terraform to meet regulatory compliance requirements, and ran the team's private npm/Helm artifact repositories (Sinopia, S3).
 
   - company: First Object Inc
-    title: Server Engineer (Contracted to Samsung Electronics America)
+    title: Server Engineer
     dateFrom: Aug 2015
     dateTo: July 2019
     summary: >
       Delivered geospatial, serverless backend services and full-stack applications across
       global regions.
     highlights:
+      # Quoted: unquoted, YAML reads "Client: ..." as a mapping, not a string.
+      - "Client: Samsung Electronics America."
       - Developed and deployed a serverless stack across multiple global regions to minimize latency, with GeoSpatial queries and GeoHashing powering geofence and location-based alerting.
       - Integrated mapping APIs including OpenStreetMap, Leaflet, Google Maps, and HERE Maps for geocoding and data visualization.
       - Built Spring Boot microservices and IoT applications using the MQTT protocol for device communication.
