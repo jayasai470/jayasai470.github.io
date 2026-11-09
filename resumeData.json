@@ -172,7 +172,8 @@
           "Added a custom Kubernetes host-port operator to make game machines externally reachable at lower cost, and containerized Windows games to run on Linux using Wine.",
           "Stood up and ran a Rook + Ceph storage cluster for Read-Only-Many (ROX) persistent volumes, which AWS did not support natively.",
           "Extended the Puppetlabs PVPool controller with Kubernetes volume snapshots, which cut PVC replication for game data to near-instant.",
-          "Delivered sub-100ms end-to-end latency for interactive cloud gameplay."
+          "Delivered sub-100ms end-to-end latency for interactive cloud gameplay.",
+          "Led the DevOps team for the GameHub project, with two engineers reporting directly."
         ],
         "years": "March 2022 – Jan 2025"
       },
