@@ -154,8 +154,8 @@
           "Owned a seven-version, zero-downtime Kubernetes upgrade (1.26 to 1.33) with a staged rollout, per-step validation, and a documented rollback runbook.",
           "Migrated observability to OpenTelemetry for a single instrumentation standard across logs, metrics, and traces, with CloudWatch dashboards and PagerDuty on-call routing built on top.",
           "Wrote k6 performance tests and automated their runs, with custom reports and alerting.",
-          "Cut AWS spend with rightsizing and instance strategy, automated cleanup of idle resources, and per-team cost visibility backed by budget alarms.",
-          "Cut internal egress costs by 75% by moving service traffic to VPC endpoints through route table changes.",
+          "Reduced AWS infrastructure costs through instance rightsizing and workload-aware instance selection, automated cleanup of idle resources, and team-level cost visibility with budget alerts.",
+          "Reduced internal network egress costs by 75% by migrating service traffic to AWS VPC endpoints and updating route tables.",
           "Own CI/CD and production operations for these systems. Every release reaches production through Terraform and Helm, and the remediations that page most often are automated away."
         ],
         "years": "Feb 2025 – Present"
@@ -173,7 +173,7 @@
           "Stood up and ran a Rook + Ceph storage cluster for Read-Only-Many (ROX) persistent volumes, which AWS did not support natively.",
           "Extended the Puppetlabs PVPool controller with Kubernetes volume snapshots, which cut PVC replication for game data to near-instant.",
           "Delivered sub-100ms end-to-end latency for interactive cloud gameplay.",
-          "Led the DevOps team for the GameHub project, with two engineers reporting directly."
+          "Led a 3-man DevOps team for the GameHub O&O platform, directing two engineers in architecting cloud infrastructure for in-house gaming strategies"
         ],
         "years": "March 2022 – Jan 2025"
       },
