@@ -1,4 +1,5 @@
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
@@ -20,6 +21,10 @@ function contentWatcher() {
         if (file !== resumeYaml) return;
         try {
           buildContent();
+          execFileSync(process.execPath, ['scripts/build-resume.cjs'], {
+            cwd: __dirname,
+            stdio: 'inherit',
+          });
           server.ws.send({ type: 'full-reload' });
         } catch (err) {
           console.error('[content] rebuild failed:', err.message);

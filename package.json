@@ -19,10 +19,10 @@
     "yaml": "^2.9.1"
   },
   "scripts": {
-    "build:content": "node scripts/build-content.mjs",
+    "build:content": "node scripts/build-all.mjs",
     "dev": "yarn build:content && vite",
     "start": "yarn dev",
-    "build:file": "yarn build:content && node scripts/build-resume.cjs",
+    "build:file": "yarn build:content",
     "build": "yarn build:content && vite build",
     "preview": "vite preview",
     "test": "vitest",

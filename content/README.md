@@ -3,12 +3,12 @@
 `resume.yaml` is the single source of truth for both the site and the resume PDF.
 Nothing outside this file needs to change when you add a job, a project, or a skill.
 
-`scripts/build-content.mjs` compiles it into `public/resumeData.json` (a generated
-file — don't hand-edit it; it's committed to git so the repo always has a working
-build without requiring a build step first). That script runs automatically before
-`yarn dev`, `yarn build`, and `yarn build:file`, and live-reloads the dev server
-whenever `resume.yaml` changes — remember to re-run it (or just rebuild) and commit
-the regenerated file whenever you edit `resume.yaml`.
+`scripts/build-content.mjs` compiles it into `public/resumeData.json`, and
+`scripts/build-resume.cjs` generates the résumé PDF. Both outputs are committed to
+git, so the repo has a working build without requiring a build step first. Run
+`yarn build:content` (also used by `yarn dev`, `yarn build`, and `yarn build:file`)
+after editing the YAML to regenerate both files. While `yarn dev` is running, a
+change to `resume.yaml` automatically regenerates both outputs and reloads the page.
 
 ## Two summaries: `skillmessage` vs `summary`
 
