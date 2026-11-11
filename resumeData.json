@@ -62,7 +62,8 @@
           "Spring Boot",
           "Express",
           "NestJS",
-          "Spring WebFlux"
+          "C/C++",
+          "SQL"
         ]
       },
       {
@@ -77,8 +78,7 @@
           "KubeVirt",
           "Terraform",
           "Serverless Framework",
-          "Packer",
-          "AWS Elemental MediaTailor"
+          "Packer"
         ]
       },
       {
@@ -184,11 +184,13 @@
         "dateTo": "Feb 2022",
         "summary": "Built reactive, event-driven microservices and real-time stream processing systems for wearable and B2B platforms.",
         "highlights": [
-          "Built and ran Node.js backend services on Kubernetes (EKS), deployed with Helm, behind B2B applications on Samsung's wearable platform, among them beacon-based indoor positioning for proximity detection and contact tracing for wearable devices.",
-          "Used Apache Flink for real-time stream processing with Complex Event Processing (CEP) for advanced event pattern detection.",
-          "Designed event-driven microservices on a Function-as-a-Service (FaaS) model on AWS, with deployment automation via the Serverless framework.",
-          "Built fully reactive applications with Java, Spring WebFlux, MongoDB, and Kafka, and designed GraphQL APIs for client data access.",
-          "Engineered multi-region traffic infrastructure with Terraform to meet regulatory compliance requirements, and ran the team's private npm/Helm artifact repositories (Sinopia, S3)."
+          "Built and operated Node.js backend services on Kubernetes (AWS EKS), deployed with Helm, supporting Samsung wearable B2B applications for health monitoring, beacon-based indoor positioning, proximity detection, and contact tracing.",
+          "Worked with wearable-generated health and biometric data, including heart rate (HR), heart rate variability (HRV), accelerometer signals, sleep metrics, and location data, supporting the ingestion and processing of sensor data from wearable devices.",
+          "Used Apache Flink and Complex Event Processing (CEP) to process real-time event streams and detect patterns across wearable sensor and location data.",
+          "Contributed to security practices for infrastructure and sensitive health and biometric data, aligning system design and operational controls with HIPAA requirements, SOC 2 controls, and NIST security frameworks.",
+          "Designed event-driven, serverless microservices on AWS using a Function-as-a-Service (FaaS) architecture, with deployment automation through the Serverless Framework.",
+          "Developed reactive backend services and GraphQL APIs using Java, Spring WebFlux, MongoDB, and Kafka to support scalable data access and event-driven application workflows.",
+          "Engineered multi-region AWS infrastructure with Terraform to support availability, security, and regulatory requirements."
         ],
         "years": "July 2019 – Feb 2022"
       },
@@ -203,8 +205,7 @@
           "Developed and deployed serverless applications across multiple global AWS regions to minimize latency, with geospatial queries and geohashing powering geofence and location-based alerting.",
           "Integrated mapping APIs including OpenStreetMap, Leaflet, Google Maps, and HERE Maps for geocoding and location-data visualization.",
           "Built Spring Boot microservices and IoT applications using the MQTT protocol for device communication.",
-          "Designed a reactive, real-time UI using Meteor, Handlebars, and MongoDB, and contributed across the stack including CMS (Magnolia) and Kafka streaming.",
-          "Conducted rapid prototyping of proof-of-concept systems and matured them into production-grade AWS deployments."
+          "Designed a reactive, real-time UI using Meteor, Handlebars, and MongoDB, and contributed across the stack including CMS (Magnolia) and Kafka streaming."
         ],
         "years": "Aug 2015 – July 2019"
       }
