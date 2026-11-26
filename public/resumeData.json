@@ -63,7 +63,7 @@
           "Spring Boot",
           "Express",
           "NestJS",
-          "C/C++",
+          "C",
           "SQL"
         ]
       },
@@ -87,11 +87,11 @@
           "Kafka",
           "Kinesis",
           "Apache Flink",
-          "MongoDB Atlas",
           "MongoDB",
           "Redis",
           "MySQL",
-          "Elasticsearch"
+          "Elasticsearch",
+          "DynamoDB"
         ]
       },
       {
@@ -126,17 +126,6 @@
         ]
       },
       {
-        "category": "Identity & Privacy",
-        "items": [
-          "Samsung Account",
-          "AWS Cognito",
-          "Auth0",
-          "Okta",
-          "AWS EKS OIDC",
-          "CCPA Data Deletion"
-        ]
-      },
-      {
         "category": "AI & Data Retrieval",
         "items": [
           "Agentic AI",
@@ -165,7 +154,8 @@
           "Built a React-based content management system for the Content Operations team to manage linear TV channels.",
           "Designed a real-time ad-event analytics pipeline (AWS Kinesis, S3, Glue, Athena) that captures VAST tracking events, with QuickSight dashboards for playable-ad performance reporting.",
           "Built a custom Kubernetes controller to reconcile published channels in MySQL with Kubernetes custom resources (CRDs), which automates channel infrastructure management.",
-          "Developed a GPT-based movie recommendation system using Retrieval-Augmented Generation (RAG) with LangChain and Azure OpenAI, and vector search using Azure AI Search and Redis.",
+          "Developed a GPT-based movie recommendation system using RAG with LangChain, Azure OpenAI, Azure AI Search, and Redis.",
+          "Configured LiteLLM as an internal gateway for developers to access Claude and Codex through Amazon Bedrock.",
           "Owned a seven-version, zero-downtime Kubernetes upgrade (1.26 to 1.33) with a staged rollout, per-step validation, and a documented rollback runbook.",
           "Migrated observability to OpenTelemetry for a single instrumentation standard across logs, metrics, and traces, with CloudWatch dashboards and PagerDuty on-call routing built on top.",
           "Reduced AWS infrastructure costs through instance rightsizing and workload-aware instance selection, automated cleanup of idle resources, and team-level cost visibility with budget alerts.",
