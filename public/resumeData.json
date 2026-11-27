@@ -149,15 +149,14 @@
         "dateTo": "Present",
         "summary": "Lead backend and DevOps engineer on Samsung TV's interactive advertising platform, across server-side ad insertion, playable ads, and AI-driven recommendations.",
         "highlights": [
-          "Built an in-house linear channel origin for Samsung Smart TVs' FAST (free ad-supported streaming TV) service on Node.js/NestJS and Kubernetes (EKS), in place of AWS Elemental MediaTailor Channel Assembly, assembling looping and scheduled playlists for ambient channels into continuous HLS streams through a CDN-backed origin.",
-          "Implemented server-side ad insertion (SSAI) using SCTE-35 markers, and a VAST-compliant ad service that routes Samsung TV ad inventory to interactive mini-games served as playable ads.",
-          "Built a React-based content management system for the Content Operations team to manage linear TV channels.",
-          "Designed a real-time ad-event analytics pipeline (AWS Kinesis, S3, Glue, Athena) that captures VAST tracking events, with QuickSight dashboards for playable-ad performance reporting.",
-          "Built a custom Kubernetes controller to reconcile published channels in MySQL with Kubernetes custom resources (CRDs), which automates channel infrastructure management.",
+          "Replaced Fluent Bit, StatsD, AWS X-Ray daemon, and self-hosted Graphite/Grafana with the OpenTelemetry Collector, Prometheus-style metrics scraping, and AWS-managed storage, dashboards, and alerts. This brought logs, metrics, and traces together for faster debugging, let us retire self-managed components, and kept alerting independent of the systems being monitored.",
+          "Built a Node.js/NestJS origin on EKS for Samsung Smart TV's FAST service, replacing AWS Elemental MediaTailor Channel Assembly. It turns looping and scheduled playlists into continuous HLS streams through a CDN and supports SCTE-35 ad insertion and VAST playable ads.",
+          "Created a React and TypeScript CMS that lets Content Operations configure and publish linear TV channels.",
+          "Built a real-time pipeline with Kinesis, S3, Glue, and Athena for VAST ad events. Added QuickSight dashboards to report playable-ad performance.",
+          "Created a Kubernetes controller that keeps published channel records in MySQL in sync with Kubernetes custom resources (CRDs), automating channel infrastructure management.",
           "Developed a GPT-based movie recommendation system using RAG with LangChain, Azure OpenAI, Azure AI Search, and Redis.",
           "Configured LiteLLM as an internal gateway for developers to access Claude and Codex through Amazon Bedrock.",
           "Owned a seven-version, zero-downtime Kubernetes upgrade (1.26 to 1.33) with a staged rollout, per-step validation, and a documented rollback runbook.",
-          "Migrated observability to OpenTelemetry for a single instrumentation standard across logs, metrics, and traces, with CloudWatch dashboards and PagerDuty on-call routing built on top.",
           "Reduced AWS infrastructure costs through instance rightsizing and workload-aware instance selection, automated cleanup of idle resources, and team-level cost visibility with budget alerts.",
           "Reduced internal network egress costs by 75% by migrating service traffic to AWS VPC endpoints and updating route tables.",
           "Own CI/CD and production operations for these systems. Every release reaches production through Terraform and Helm, and the remediations that page most often are automated away."
@@ -169,11 +168,11 @@
         "title": "Engineer 3, Software Process Engineer",
         "dateFrom": "March 2022",
         "dateTo": "Jan 2025",
-        "summary": "Built and operated a low-latency cloud game streaming platform, including the GPU virtualization and storage systems behind a custom Kubernetes-based game infrastructure.",
+        "summary": "Built and ran a low-latency cloud game streaming platform, including GPU virtualization and storage on a custom Kubernetes stack.",
         "highlights": [
           "Automated GPU-backed virtual game machine provisioning with KubeVirt (Kubernetes + VMs) across AWS and OCI bare-metal, running games on NVIDIA and AMD GPUs via vGPU/SR-IOV on Windows and Linux.",
           "Integrated NVIDIA Device Plugin and NVIDIA GPU Operator into Kubernetes environments to support GPU resource discovery, allocation, and lifecycle management for GPU workloads.",
-          "Developed a custom Kubernetes host-port Controller in Go to expose game machines externally at lower cost, and containerized Windows games to run on Linux using Wine.",
+          "Developed a custom Kubernetes host-port controller in Go to expose game machines externally at lower cost. Also containerized Windows games to run on Linux with Wine.",
           "Stood up and ran a Rook + Ceph storage cluster for Read-Only-Many (ROX) persistent volumes, which AWS did not support natively.",
           "Extended Puppetlabs' Go-based PVPool controller with Kubernetes volume snapshots, cutting PVC replication for game data to near-instant.",
           "Delivered sub-100ms end-to-end latency for interactive cloud gameplay.",
@@ -186,14 +185,14 @@
         "title": "Engineer 2, Software Process Engineer",
         "dateFrom": "July 2019",
         "dateTo": "Feb 2022",
-        "summary": "Built reactive, event-driven microservices and real-time stream processing systems for wearable and B2B platforms.",
+        "summary": "Developed reactive microservices and real-time stream processing for wearable and B2B products.",
         "highlights": [
-          "Developed and operated Node.js services on Kubernetes (AWS EKS), deployed with Helm, supporting Samsung wearable B2B applications for health monitoring, beacon-based indoor positioning, proximity detection, and contact tracing.",
-          "Implemented multi-tenant B2B data services using MongoDB Atlas to store wearable location and sensor data, including heart rate, HRV, accelerometer signals, and sleep metrics.",
+          "Ran Node.js services on AWS EKS, deployed with Helm, for Samsung's wearable B2B products. They supported health monitoring, indoor positioning, proximity detection, and contact tracing.",
+          "Used MongoDB Atlas for location and sensor data in multi-tenant B2B wearable services, including heart rate, HRV, accelerometer signals, and sleep metrics.",
           "Used Apache Flink and Complex Event Processing (CEP) to process real-time event streams and detect patterns across wearable sensor and location data.",
           "Contributed to security practices for infrastructure and sensitive health and biometric data, aligning system design and operational controls with HIPAA, CCPA requirements, SOC 2 controls, and NIST security frameworks.",
-          "Developed reactive backend services and GraphQL APIs using Java, Spring WebFlux, MongoDB, and Kafka to support scalable data access and event-driven application workflows.",
-          "Engineered multi-region AWS infrastructure with Terraform to support availability, security, and regulatory requirements."
+          "Developed GraphQL APIs and reactive Java services with Spring WebFlux, MongoDB, and Kafka for wearable applications.",
+          "Used Terraform to build multi-region AWS infrastructure for availability, security, and regulatory requirements."
         ],
         "years": "July 2019 – Feb 2022"
       },
@@ -205,9 +204,9 @@
         "summary": "Delivered geospatial, serverless backend services and full-stack applications across global regions.",
         "highlights": [
           "Client: Samsung Electronics America.",
-          "Developed and deployed serverless applications across multiple global AWS regions to minimize latency, with geospatial queries and geohashing powering geofence and location-based alerting.",
+          "Deployed serverless AWS applications across regions, using geospatial queries and geohashing for geofence and location alerts.",
           "Created Spring Boot microservices and IoT applications using MQTT for device communication.",
-          "Designed a reactive, real-time UI using Meteor, Handlebars, and MongoDB, and contributed across the stack including CMS (Magnolia) and Kafka streaming."
+          "Built a real-time UI with Meteor, Handlebars, and MongoDB, and contributed to Magnolia CMS and Kafka streaming."
         ],
         "years": "Aug 2015 – July 2019"
       }
