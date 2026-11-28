@@ -67,10 +67,10 @@ experience:
       server-side ad insertion, playable ads, and AI-driven recommendations.
     highlights:
       - Replaced Fluent Bit, StatsD, AWS X-Ray daemon, and self-hosted Graphite/Grafana with the OpenTelemetry Collector, Prometheus-style metrics scraping, and AWS-managed storage, dashboards, and alerts. This brought logs, metrics, and traces together for faster debugging, let us retire self-managed components, and kept alerting independent of the systems being monitored.
-      - Built a Node.js/NestJS origin on EKS for Samsung Smart TV's FAST service, replacing AWS Elemental MediaTailor Channel Assembly. It turns looping and scheduled playlists into continuous HLS streams through a CDN and supports SCTE-35 ad insertion and VAST playable ads.
       - Created a React and TypeScript CMS that lets Content Operations configure and publish linear TV channels.
       - Built a real-time pipeline with Kinesis, S3, Glue, and Athena for VAST ad events. Added QuickSight dashboards to report playable-ad performance.
       - Created a Kubernetes controller that keeps published channel records in MySQL in sync with Kubernetes custom resources (CRDs), automating channel infrastructure management.
+      - Built a Node.js/NestJS origin on EKS for Samsung Smart TV's FAST service, replacing AWS Elemental MediaTailor Channel Assembly. It turns looping and scheduled playlists into continuous HLS streams through a CDN and supports SCTE-35 ad insertion and VAST playable ads.
       - Developed a GPT-based movie recommendation system using RAG with LangChain, Azure OpenAI, Azure AI Search, and Redis.
       - Configured LiteLLM as an internal gateway for developers to access Claude and Codex through Amazon Bedrock.
       - Owned a seven-version, zero-downtime Kubernetes upgrade (1.26 to 1.33) with a staged rollout, per-step validation, and a documented rollback runbook.
@@ -87,6 +87,7 @@ experience:
       and storage on a custom Kubernetes stack.
     highlights:
       - Automated GPU-backed virtual game machine provisioning with KubeVirt (Kubernetes + VMs) across AWS and OCI bare-metal, running games on NVIDIA and AMD GPUs via vGPU/SR-IOV on Windows and Linux.
+      - Automated EKS/OKE machine image builds with Packer (qcow2), including host GPU driver management.
       - Integrated NVIDIA Device Plugin and NVIDIA GPU Operator into Kubernetes environments to support GPU resource discovery, allocation, and lifecycle management for GPU workloads.
       - Developed a custom Kubernetes host-port controller in Go to expose game machines externally at lower cost. Also containerized Windows games to run on Linux with Wine.
       - Stood up and ran a Rook + Ceph storage cluster for Read-Only-Many (ROX) persistent volumes, which AWS did not support natively.
@@ -105,6 +106,7 @@ experience:
       - Ran Node.js services on AWS EKS, deployed with Helm, for Samsung's wearable B2B products. They supported health monitoring, indoor positioning, proximity detection, and contact tracing.
       - Used MongoDB Atlas for location and sensor data in multi-tenant B2B wearable services, including heart rate, HRV, accelerometer signals, and sleep metrics.
       - Used Apache Flink and Complex Event Processing (CEP) to process real-time event streams and detect patterns across wearable sensor and location data.
+      - Built a custom OAuth 2.0 authentication service integrating Samsung Account, AWS Cognito, Auth0, and Okta.
       - Contributed to security practices for infrastructure and sensitive health and biometric data, aligning system design and operational controls with HIPAA, CCPA requirements, SOC 2 controls, and NIST security frameworks.
       - Developed GraphQL APIs and reactive Java services with Spring WebFlux, MongoDB, and Kafka for wearable applications.
       - Used Terraform to build multi-region AWS infrastructure for availability, security, and regulatory requirements.
@@ -139,11 +141,11 @@ skillCategories:
   - category: Languages & Frameworks
     items: [Java, Node.js, TypeScript, React, Go, Python, Spring Boot, Express, NestJS, C, SQL]
   - category: Cloud & Infrastructure
-    items: [AWS, Azure, OCI, Kubernetes, Helm, Docker, KubeVirt, Terraform, Serverless Framework]
+    items: [AWS, Azure, OCI, Linux, Kubernetes, Helm, Docker, KubeVirt, Packer, Ceph, Terraform, Serverless Framework]
   - category: Data & Messaging
-    items: [Kafka, Kinesis, Apache Flink, MongoDB, Redis, MySQL, Elasticsearch, DynamoDB]
+    items: [Kafka, Kinesis, Apache Flink, MongoDB Atlas, MongoDB, Redis, MySQL, Elasticsearch, DynamoDB]
   - category: Observability & CI/CD
-    items: [OpenTelemetry, CloudWatch, PagerDuty, Prometheus, Grafana, Traefik, GitLab CI/CD, GitHub Actions, Jenkins, k6]
+    items: [OpenTelemetry Collector, CloudWatch, Prometheus, PromQL, Grafana, AWS X-Ray, Fluent Bit, StatsD, Graphite, PagerDuty, GitLab CI/CD, GitHub Actions, Jenkins, k6]
   - category: APIs & Protocols
     items: [REST, GraphQL, WebSocket, gRPC, OAuth 2.0, OIDC, JWT, MQTT, WebRTC, RTSP, VAST]
   - category: AI & Data Retrieval
